@@ -1,0 +1,10 @@
+.primeiro {
+  width: 960px;
+  background-image: url(images/primeiro fundo.png);
+  background-size: 100%;
+}
+
+.container{
+  background-image: url(images/primeiro fundo.png);
+  background-size: 50%;
+}
