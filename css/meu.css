@@ -1,3 +1,7 @@
+body{
+  background-image: src="images/foto_logo.png";
+}
+
 .primeira{
   position: relative;
   max-width: 80%
