@@ -39,5 +39,93 @@ h4 {font-family: "Mark My Words", sans-serif;
 .segunda{
   max-width: 80%;
   height: auto;
+}
 
+
+a {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  width: 78%;
+  position: relative;
+  z-index: 10;
+  background: #000000;
+  margin: 10px 11%;
+}
+
+a:hover {
+  background: #000000;
+}
+
+span {
+  display: block;
+  padding: 8px 30px;
+  position: relative;
+  z-index: 10;
+  background: inherit;
+  text-align: center;
+}
+
+a::before, a::after, span::before, span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  background: inherit;
+  z-index: -1;
+  background-clip: padding-box;
+  border-color: #eee;
+  border-style: solid;
+  border-width: 0;
+}
+
+a::before {
+  top: -10px;
+  left: 15%;
+  -webkit-transform: skew(45deg);
+  -moz-transform: skew(45deg);
+  -ms-transform: skew(45deg);
+  -o-transform: skew(45deg);
+  transform: skew(45deg);
+  border-top-width: 10px;
+  border-right-width: 12px;
+}
+
+a::after {
+  top: -10px;
+  right: 15%;
+  -webkit-transform: skew(-45deg);
+  -moz-transform: skew(-45deg);
+  -ms-transform: skew(-45deg);
+  -o-transform: skew(-45deg);
+  transform: skew(-45deg);
+  border-top-width: 10px;
+  border-left-width: 12px;
+}
+
+span::before {
+  top: 50%;
+  left: 15%;
+  -webkit-transform: skew(-45deg);
+  -moz-transform: skew(-45deg);
+  -ms-transform: skew(-45deg);
+  -o-transform: skew(-45deg);
+  transform: skew(-45deg);
+  border-bottom-width: 10px;
+  border-right-width: 12px;
+}
+
+span::after {
+  top: 50%;
+  right: 15%;
+  -webkit-transform: skew(45deg);
+  -moz-transform: skew(45deg);
+  -ms-transform: skew(45deg);
+  -o-transform: skew(45deg);
+  transform: skew(45deg);
+  border-bottom-width: 10px;
+  border-left-width: 12px;
 }
