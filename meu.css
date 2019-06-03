@@ -13,3 +13,7 @@
     background-color: #81918E;
     background-image: url("img/capa1.svg");
   }
+
+	#nav ul li a.active span:before {
+  	color: #84B8E3;
+  }
